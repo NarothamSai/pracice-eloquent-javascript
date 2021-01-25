@@ -13,20 +13,26 @@
  * @param {string} length
  */
 
-function loopingATriangle(length) {
+function loopingATriangleWithLog(length) {
+  let logHashStr = "";
+  const hashChar = "#";
   for (let ctr = 1; ctr <= length; ctr++) {
-    const hashChar = "#";
-    const logHashStr = makeStringOfGivenCharAndLength(hashChar, ctr);
+    logHashStr = logHashStr + hashChar;
     console.log(logHashStr);
   }
 }
 
-function makeStringOfGivenCharAndLength(char, length) {
-  let resultStr = "";
-  for (let ctr = 0; ctr < length; ctr++) {
-    resultStr += char;
+function loopingATriangle(length) {
+  let triangleStr = "";
+  let logHashStr = "";
+  const hashChar = "#";
+  for (let ctr = 1; ctr <= length; ctr++) {
+    logHashStr = logHashStr + hashChar;
+    triangleStr += logHashStr + (ctr !== length ? "\n" : "");
   }
-  return resultStr;
+  return triangleStr;
 }
 
-loopingATriangle(7);
+// loopingATriangleWithLog(7);
+
+module.exports = loopingATriangle;
