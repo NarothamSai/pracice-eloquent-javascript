@@ -1,0 +1,25 @@
+{
+  "name": "pracice-eloquent-javascript",
+  "version": "1.0.0",
+  "description": "Practice JavaScript through examples, exercises, projects of Eloquent JavaScript",
+  "main": "index.js",
+  "dependencies": {
+    "jest": "^26.6.3",
+    "pino": "^6.11.0"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/NarothamSai/practice-eloquent-javascript.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/NarothamSai/practice-eloquent-javascript/issues"
+  },
+  "homepage": "https://github.com/NarothamSai/practice-eloquent-javascript#readme"
+}
