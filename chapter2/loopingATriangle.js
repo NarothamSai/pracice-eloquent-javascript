@@ -33,6 +33,6 @@ function loopingATriangle(length) {
   return triangleStr;
 }
 
-// loopingATriangleWithLog(7);
+loopingATriangleWithLog(7);
 
 module.exports = loopingATriangle;

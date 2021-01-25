@@ -37,4 +37,6 @@ function makeChessboardGrid(size) {
 }
 
 console.log(makeChessboardGrid(8));
-console.log(makeChessboardGrid(50));
+// console.log(makeChessboardGrid(50));
+
+module.exports = makeChessboardGrid;
