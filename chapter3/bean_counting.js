@@ -25,31 +25,31 @@
  * @param {string} char
  */
 function countChar(str, char) {
-  let char_count = 0;
+  let charCount = 0;
   for (let ctr = 0; ctr < str.length; ctr++) {
-    if (str[ctr] === char) char_count++;
+    if (str[ctr] === char) charCount++;
   }
-  return char_count;
+  return charCount;
 }
 
-let pass_checkbox = "\u2705";
-let fail_checkbox = "\u274e";
-//Tests
+const passCheckbox = "\u2705";
+const failCheckbox = "\u274e";
+// Tests
 console.log(
   "countChar for Bean Counting of B must be 1",
   countChar("Bean Counting", "B") === 1
-    ? pass_checkbox + " Passed"
-    : fail_checkbox + " Failed"
+    ? passCheckbox + " Passed"
+    : failCheckbox + " Failed"
 );
 console.log(
   "countChar for face-lift of f must be 2",
   countChar("face-lift", "f") === 2
-    ? pass_checkbox + " Passed"
-    : fail_checkbox + " Failed"
+    ? passCheckbox + " Passed"
+    : failCheckbox + " Failed"
 );
 console.log(
   "countChar for Take a bath of a. must be 3",
   countChar("Take a bath.", "a") === 3
-    ? pass_checkbox + " Passed"
-    : fail_checkbox + " Failed"
+    ? passCheckbox + " Passed"
+    : failCheckbox + " Failed"
 );

@@ -15,18 +15,18 @@
 
 function loopingATriangle(length) {
   for (let ctr = 1; ctr <= length; ctr++) {
-    let hash_char = "#";
-    let log_hash_str = makeStringOfGivenCharAndLength(hash_char, ctr);
-    console.log(log_hash_str);
+    const hashChar = "#";
+    const logHashStr = makeStringOfGivenCharAndLength(hashChar, ctr);
+    console.log(logHashStr);
   }
 }
 
 function makeStringOfGivenCharAndLength(char, length) {
-  let result_str = "";
+  let resultStr = "";
   for (let ctr = 0; ctr < length; ctr++) {
-    result_str += char;
+    resultStr += char;
   }
-  return result_str;
+  return resultStr;
 }
 
 loopingATriangle(7);

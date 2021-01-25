@@ -16,13 +16,13 @@ function minimumNum(num1, num2) {
  * @param  {...number} arg
  */
 function minimumNumAllArg(...arg) {
-  let min_num = Number.MAX_SAFE_INTEGER;
+  let minNum = Number.MAX_SAFE_INTEGER;
   arg.forEach((elem) => {
-    if (elem < min_num) {
-      min_num = elem;
+    if (elem < minNum) {
+      minNum = elem;
     }
   });
-  return min_num;
+  return minNum;
 }
 
 console.log(minimumNum(15, 20));

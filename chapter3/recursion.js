@@ -23,27 +23,27 @@
 
 function isEven(num) {
   if (num < 0) return false;
-  else if (num == 0) return true;
-  else if (num == 1) return false;
+  else if (num === 0) return true;
+  else if (num === 1) return false;
   else return isEven(num - 2);
 }
 
 console.log(isEven(50));
 console.log(isEven(75));
 
-let pass_checkbox = "\u2705";
-let fail_checkbox = "\u274e";
+const passCheckBox = "\u2705";
+const failCheckBox = "\u274e";
 
-//Tests
+// Tests
 console.log(
   "isEven for 50 must be true.",
-  isEven(50) === true ? pass_checkbox + " Passed" : fail_checkbox + "Failed"
+  isEven(50) === true ? passCheckBox + " Passed" : failCheckBox + "Failed"
 );
 console.log(
   "isEven for 75 must be false.",
-  isEven(75) === false ? pass_checkbox + " Passed" : fail_checkbox + "Failed"
+  isEven(75) === false ? passCheckBox + " Passed" : failCheckBox + "Failed"
 );
 console.log(
   "isEven for -1 must be false.",
-  isEven(-1) === false ? pass_checkbox + " Passed" : fail_checkbox + "Failed"
+  isEven(-1) === false ? passCheckBox + " Passed" : failCheckBox + "Failed"
 );
