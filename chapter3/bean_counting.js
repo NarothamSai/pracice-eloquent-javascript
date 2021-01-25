@@ -27,7 +27,9 @@
 function countChar(str, char) {
   let charCount = 0;
   for (let ctr = 0; ctr < str.length; ctr++) {
-    if (str[ctr] === char) charCount++;
+    if (str.charAt(ctr) === char) {
+      charCount++;
+    }
   }
   return charCount;
 }
