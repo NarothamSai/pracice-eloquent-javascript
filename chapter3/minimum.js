@@ -27,5 +27,7 @@ function minimumNumAllArg(...arg) {
   return minNum;
 }
 
-console.log(minimumNum(15, 20));
-console.log(minimumNumAllArg(15, 20, 5));
+// console.log(minimumNum(15, 20));
+// console.log(minimumNumAllArg(15, 20, 5));
+
+module.exports = minimumNumAllArg;
