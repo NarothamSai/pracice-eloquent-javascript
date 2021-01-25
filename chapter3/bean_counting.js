@@ -34,24 +34,4 @@ function countChar(str, char) {
   return charCount;
 }
 
-const passCheckbox = "\u2705";
-const failCheckbox = "\u274e";
-// Tests
-console.log(
-  "countChar for Bean Counting of B must be 1",
-  countChar("Bean Counting", "B") === 1
-    ? passCheckbox + " Passed"
-    : failCheckbox + " Failed"
-);
-console.log(
-  "countChar for face-lift of f must be 2",
-  countChar("face-lift", "f") === 2
-    ? passCheckbox + " Passed"
-    : failCheckbox + " Failed"
-);
-console.log(
-  "countChar for Take a bath of a. must be 3",
-  countChar("Take a bath.", "a") === 3
-    ? passCheckbox + " Passed"
-    : failCheckbox + " Failed"
-);
+module.exports = countChar;
