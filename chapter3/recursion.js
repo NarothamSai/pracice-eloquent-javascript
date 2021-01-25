@@ -33,22 +33,7 @@ function isEven(num) {
   }
 }
 
-console.log(isEven(50));
-console.log(isEven(75));
+// console.log(isEven(50));
+// console.log(isEven(75));
 
-const passCheckBox = "\u2705";
-const failCheckBox = "\u274e";
-
-// Tests
-console.log(
-  "isEven for 50 must be true.",
-  isEven(50) === true ? passCheckBox + " Passed" : failCheckBox + "Failed"
-);
-console.log(
-  "isEven for 75 must be false.",
-  isEven(75) === false ? passCheckBox + " Passed" : failCheckBox + "Failed"
-);
-console.log(
-  "isEven for -1 must be false.",
-  isEven(-1) === false ? passCheckBox + " Passed" : failCheckBox + "Failed"
-);
+module.exports = isEven;
