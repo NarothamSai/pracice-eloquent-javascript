@@ -7,3 +7,6 @@ test("findSolution for 13 to be  required solution", () => {
 test("findSolution for 24 to be required solution", () => {
   expect(findSolution(24)).toBe("(((1 * 3) + 5) * 3)");
 });
+test("findSolution for 15 to be null", () => {
+  expect(findSolution(15)).toBe(null);
+});
