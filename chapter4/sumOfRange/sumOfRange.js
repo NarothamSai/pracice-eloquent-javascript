@@ -11,7 +11,6 @@ function range(start, end) {
   for (let ctr = start; ctr <= end; ctr += 1) {
     rangeNum.push(ctr);
   }
-  console.log(rangeNum);
   return rangeNum;
 }
 
