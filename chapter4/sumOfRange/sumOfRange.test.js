@@ -9,7 +9,7 @@ describe("sum of range:", () => {
   });
   describe("range", () => {
     test("range of 1 and 10 return array from 1 to 10", () => {
-      expect(range(1, 10)).toBe([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
+      expect(range(1, 10)).toEqual([1, 2, 3, 4, 5, 6, 7, 8, 9, 10]);
     });
   });
 });
